@@ -12,3 +12,11 @@ class Point():
         a=(otherPoint.x-self.x)**2 + (otherPoint.y-self.y)**2
         distancia = a**0.5
         return distancia
+        
+D=[]
+
+for i in range((int(raw_input())/2)):
+	D.append(Point(*map(int,raw_input().split())).Distancia(Point(*map(int,raw_input().split()))))
+
+for i in D:
+    print i
